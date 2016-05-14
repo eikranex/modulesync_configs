@@ -1,4 +1,6 @@
 /modules/
-/modulesync.yml
 /.bundle/
 /Gemfile.lock
+*~
+.idea/
+*.iml
