@@ -2,3 +2,4 @@
 - puppet-cfssl
 - puppet-git
 - puppet-nginx
+- puppet-webmin
