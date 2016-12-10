@@ -4,6 +4,9 @@ sudo: false
 language: ruby
 cache: bundler
 script: <%= @configs['script'] %>
+#Inserting below due to the following issue: https://github.com/travis-ci/travis-ci/issues/3531#issuecomment-88311203
+before_install:
+  - gem update bundler
 matrix:
   fast_finish: true
   include:
@@ -45,3 +48,12 @@ matrix:
 <% end -%>
 notifications:
   email: false
+<% if @configs['hipchat'] -%>
+  hipchat:
+    rooms:
+      secure: <%= @configs['hipchat'] %>
+    template:
+    - ! '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
+    - ! 'Change view: %{compare_url}'
+    - ! 'Build details: %{build_url}'
+<% end -%>
