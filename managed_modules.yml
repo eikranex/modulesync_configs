@@ -4,3 +4,4 @@
 - puppet-git
 - puppet-nginx
 - puppet-webmin
+- puppet-wget
