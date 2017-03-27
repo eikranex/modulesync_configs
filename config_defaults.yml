@@ -2,6 +2,7 @@
 :global:
   supported_oss:
     puppet-cfssl:   [linux]
+    puppet-deluge:  [linux]
     puppet-easyrsa: [linux]
     puppet-git:     [linux]
     puppet-nginx:   [linux]
@@ -145,6 +146,9 @@ Rakefile:
   - 'relative'
 
 spec/spec.opts:
+  delete: true
+
+.project:
   delete: true
 
 locales/config.yaml:

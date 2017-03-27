@@ -1,5 +1,6 @@
 ---
 - puppet-cfssl
+- puppet-deluge
 - puppet-easyrsa
 - puppet-git
 - puppet-nginx
