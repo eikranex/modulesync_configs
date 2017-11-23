@@ -4,5 +4,6 @@
 - puppet-easyrsa
 - puppet-git
 - puppet-nginx
+- puppet-ohmyzsh
 - puppet-webmin
 - puppet-wget
