@@ -6,6 +6,8 @@
     puppet-easyrsa: [linux]
     puppet-git:     [linux]
     puppet-nginx:   [linux]
+    puppet-ohmyzsh: [linux]
+    puppet-openvpn: [linux]
     puppet-webmin:  [linux]
     puppet-wget:    [linux]
 
